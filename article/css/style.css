@@ -1,0 +1,221 @@
+/* normalize */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+:where(h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl):where([class]) {
+  margin-block: 0;
+}
+
+p {
+  --paragraphMarginBottom: 24px;
+
+  margin-block: 0;
+}
+
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+a:where([class]) {
+  display: inline-flex;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans';
+  color: gray;
+  background-color: white;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1, h2 {
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  font-size: 58px;
+  color: black;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+a {
+  transition-duration: 0.2s;
+  color: inherit;
+}
+
+a[class] {
+  text-decoration: none;
+}
+
+a:hover {
+  color: salmon;
+}
+
+a:focus-visible {
+  outline: 2px dashed darkblue;
+}
+
+li::marker {
+  color: lightskyblue;
+  font-size: 1.5em;
+}
+
+hr {
+  margin: 0;
+}
+
+.container {
+  max-width: calc(1600px + 16px * 2);
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+.title {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.header__extra {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.header__text {
+  text-transform: uppercase;
+  color: gray;
+}
+
+.header__contacts-link {
+  color: black;
+  font-weight: 700;
+}
+
+.section {
+  padding-block: 50px;
+}
+
+.greet__title {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.greet__description-link {
+  color: lightskyblue;
+}
+
+.greet__image {
+  margin-top: 100px;
+}
+
+.group-classes__description {
+  margin-bottom: 24px;
+}
+
+.group-classes__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-left: 20px;
+}
+
+.new-office__video-player {
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: linen;
+}
+
+.footer__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 45px;
+  padding-block: 50px;
+}
+
+.footer__menu-list {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  list-style: none;
+}
+
+.footer__extra {
+  padding-block: 50px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
