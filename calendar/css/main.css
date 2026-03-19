@@ -1,0 +1,37 @@
+body {
+  font-family: 'Menlo';
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+caption,
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+caption {
+  border-bottom: none;
+  font-weight: 700;
+}
+
+table tr th:nth-child(6),
+table tr td:nth-child(6),
+table tr th:nth-child(7),
+table tr td:nth-child(7) {
+  color: darkred;
+}
+
+td {
+  text-align: center;
+}
+
+td:empty {
+  border: none;
+}
+
+
