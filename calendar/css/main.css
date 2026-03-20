@@ -1,0 +1,54 @@
+body {
+  font-family: 'Menlo';
+}
+
+table {
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+table,
+caption,
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+caption {
+  border-bottom: none;
+  font-weight: 700;
+}
+
+th {
+  text-transform: uppercase;
+}
+
+td {
+  text-align: center;
+}
+
+/*
+td:empty {
+  border: none;
+}
+*/
+
+.weekend {
+  color: darkred;
+}
+
+/* альтернативный вариант покраски выходных дней */
+
+/*
+table tr th:nth-child(6),
+table tr td:nth-child(6),
+table tr th:nth-child(7),
+table tr td:nth-child(7) {
+  color: darkred;
+}
+*/
+
+
+
+
