@@ -45,12 +45,14 @@
             <p>Фитнес клуб «Fit.Studio» рад сообщить об открытии нового филиала в центре города. Новый клуб расположен в <a class="greet__description-link" href="/">удобном месте</a>, рядом с остановками общественного транспорта, что делает его доступным для всех жителей города. Новое просторное помещение оборудовано современными тренажёрами, зонами для групповых занятий и отдыха, а также сауной и бассейном.</p>
             <p>Кроме того, в "FitLife" работают опытные тренеры, которые помогут составить индивидуальную программу тренировок и диеты для достижения желаемых результатов. Клиенты могут также воспользоваться услугами персональных тренировок и консультаций по здоровому образу жизни.</p>
           </div>
-          <img
-            class="greet__image"
-            src="./images/gym-img.jpg"
-            alt="Спортивный зал"
-            width="1220" height="512" loading="lazy"
-          />
+          <div class="greet__decor-wrapper decor-wrapper decor-wrapper--top">
+            <img
+              class="greet__image"
+              src="./images/gym-img.jpg"
+              alt="Спортивный зал"
+              width="1220" height="512" loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -76,23 +78,22 @@
       <div class="new-office">
         <div class="new-office__inner container">
           <h2 class="new-office__title">Обзор нового филиала</h2>
-          <div class="new-office__video video-player">
-            <video
-              class="video-player__video"
-              src="./videos/gym-video.mp4"
-              width="1220"
-              height="512"
-              controls
-            >
-            </video>
-            <!--<div class="video-player__panel">
+          <div class="new-office__decor-wrapper decor-wrapper decor-wrapper--bottom">
+            <div class="new-office__video video-player">
+              <video
+                class="video-player__video"
+                src="./videos/gym-video.mp4"
+                width="1220"
+                height="512"
+                poster="./images/gym-img.jpg"
+              >
+              </video>
               <button class="video-player__play-button" type="button">
-                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="30" cy="30" r="30" fill="#3596ED"/>
-                  <path d="M40.5 29.134C41.1667 29.5189 41.1667 30.4811 40.5 30.866L25.5 39.5263C24.8333 39.9112 24 39.4301 24 38.6603L24 21.3397C24 20.5699 24.8333 20.0888 25.5 20.4737L40.5 29.134Z" fill="white" />
+                <svg width="24" height="24" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.5 8.7956C17.1667 9.1805 17.1667 10.1427 16.5 10.5276L1.5 19.1879C0.833331 19.5728 -9.36737e-07 19.0917 -9.03088e-07 18.3219L-1.45985e-07 1.00137C-1.12336e-07 0.231566 0.833334 -0.249559 1.5 0.135341L16.5 8.7956Z" fill="white" />
                 </svg>
               </button>
-            </div>-->
+            </div>
           </div>
           <p class="new-office__description">Приглашаем всех желающих посетить новый филиал фитнес клуба "FitLife" и начать заботиться о своем здоровье и фитнесе прямо сейчас!</p>
         </div>
