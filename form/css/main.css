@@ -1,4 +1,8 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   font-family: 'Menlo';
 }
 
@@ -12,6 +16,18 @@ textarea {
   resize: vertical;
   min-height: 30px;
   max-height: 150px;
+}
+
+:focus-visible {
+  outline: 2px dashed linen;
+  outline-offset: 2px;
+  transition-duration: 0s !important;
+}
+
+.container {
+  max-width: 1600px;
+  padding-inline: 16px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -33,10 +49,6 @@ textarea {
   border: 1px solid indianred;
 }
 
-.form {
-  color: linen;
-}
-
 .submit-button,
 .input {
   display: block;
@@ -49,9 +61,11 @@ textarea {
 }
 
 .form {
-  padding: 1rem;
-  max-width: 300px;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
   border-radius: 5px;
+  color: linen;
   background-color: salmon;
 }
 
@@ -62,17 +76,75 @@ textarea {
 
 .input {
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 5px 10px;
-  width: 200px;
+  width: 100%;
   border-radius: 5px;
 }
 
+.input:disabled {
+  opacity: 0.7;
+}
+
+.checkbox-group span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox {
+  position: absolute;
+  appearance: none;
+  outline: none;
+}
+
+.checkbox:disabled + span,
+.checkbox:disabled + span::before {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.checkbox-group span::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid indianred;
+  background-color: linen;
+}
+
+.checkbox:checked + span::before {
+  background: url('../icons/check-icon.svg') no-repeat center / contain, linen;
+}
+
+.checkbox:focus-visible + span::before {
+  outline: 2px dashed linen;
+  outline-offset: 2px;
+}
+
 .submit-button {
-  margin-top: 10px;
-  padding: 5px 15px;
+  margin-top: 20px;
+  padding: 6px 18px;
   border-radius: 5px;
   font-family: 'Menlo';
   color: gray;
+  transition: transform 0.2s;
 }
+
+.submit-button:hover {
+  transform: scale(1.05);
+}
+
+.submit-button:not(:disabled):active {
+  background-color: #F6E6D2;
+}
+
+.submit-button:disabled {
+  transform: none;
+  opacity: 0.7;
+  cursor: default;
+}
+
 

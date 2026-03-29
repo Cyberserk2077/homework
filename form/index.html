@@ -5,35 +5,36 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Форма</title>
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<form class="form">
-  <fieldset>
-    <legend class="visually-hidden">Личные данные</legend>
-    <h2 class="title">Ваши личные данные</h2>
-    <label for="user-name">Ваше имя</label>
-    <input class="input" id="user-name" type="text" name="name" inputmode="text" placeholder="Имя" required/>
+  <form class="form">
+    <fieldset>
+          <legend class="visually-hidden">Личные данные</legend>
+          <h2 class="title">Ваши личные данные</h2>
+          <label for="user-name">Ваше имя</label>
+          <input class="input" id="user-name" type="text" name="name" inputmode="text" placeholder="Имя" required/>
 
-    <label for="user-age">Ваш возраст</label>
-    <input class="input" id="user-age" type="number" name="age" inputmode="numeric" placeholder="Возраст" required/>
+          <label for="user-age">Ваш возраст</label>
+          <input class="input" id="user-age" type="number" name="age" inputmode="numeric" placeholder="Возраст" required/>
 
-    <label for="user-phone">Ваш номер телефона</label>
-    <input class="input" id="user-phone" type="tel" name="phone-number" inputmode="tel" placeholder="Номер телефона" required/>
+          <label for="user-phone">Ваш номер телефона</label>
+          <input class="input" id="user-phone" type="tel" name="phone-number" inputmode="tel" placeholder="Номер телефона" required/>
 
-    <label for="user-email">Ваша почта</label>
-    <input class="input" id="user-email" type="email" name="email"  inputmode="email" placeholder="Почта" required/>
-  </fieldset>
-  <fieldset>
-    <legend class="visually-hidden">Обращение</legend>
-    <label for="user-message">Сообщение</label>
-    <textarea class="input" id="user-message" name="message" placeholder="Ваше сообщение" required></textarea>
-    <div class="checkbox-group">
-      <input class="checkbox" type="checkbox" id="user-agreement" name="agreement" required/>
-      <label for="user-agreement">Я принимаю правила</label>
-    </div>
-  </fieldset>
-  <button class="submit-button" type="submit">Отправить</button>
-</form>
+          <label for="user-email">Ваша почта</label>
+          <input class="input" id="user-email" type="email" name="email"  inputmode="email" placeholder="Почта" required/>
+        </fieldset>
+    <fieldset>
+      <legend class="visually-hidden">Обращение</legend>
+      <label for="user-message">Сообщение</label>
+      <textarea class="input" id="user-message" name="message" placeholder="Ваше сообщение" required></textarea>
+      <label class="checkbox-group" for="user-agreement">
+        <input class="checkbox" type="checkbox" id="user-agreement" name="agreement" required/>
+        <span>Я принимаю правила</span>
+      </label>
+    </fieldset>
+    <button class="submit-button" type="submit">Отправить</button>
+  </form>
 </body>
 </html>
