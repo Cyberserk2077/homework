@@ -5,7 +5,8 @@
   --color-gray: #CCCCCC;
   --color-light-gray: #D3CBD9;
   --color-accent: #3596ED;
-  --color-accent-alt: #79baf3;
+  --color-accent-light: #79BAF3;
+  --color-accent-dark: #1383EC;
   --color-gradient: linear-gradient(90deg, rgba(73, 169, 255, 0.2) 0%, rgba(252, 124, 217, 0.2) 100%);
 
   --font-family-base: 'Ubuntu', sans-serif;
@@ -32,17 +33,24 @@ main {
   flex-grow: 1;
 }
 
-h1, h2 {
-  margin-bottom: 40px;
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
   font-family: var(--font-family-accent);
+  color: var(--color-dark);
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--color-dark);
+  line-height: 1.15;
+}
+
+h1, .h1,
+h2, .h2 {
+  margin-bottom: 40px;
 }
 
 h1, .h1 {
   font-size: 62px;
-  line-height: 1.15;
 }
 
 h2, .h2 {
@@ -51,6 +59,11 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 36px;
+}
+
+h4, .h4 {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 a,
@@ -70,6 +83,14 @@ a {
 
 a:hover {
   color: var(--color-accent);
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 :focus-visible {
@@ -102,6 +123,19 @@ a:hover {
   background-color: var(--color-accent);
   cursor: pointer;
   white-space: nowrap;
+}
+
+.button:hover {
+  color: var(--color-white);
+  background-color: var(--color-accent-light);
+}
+
+.button:active {
+  background-color: var(--color-accent-dark);
+}
+
+button.button:disabled {
+  background-color: var(--color-accent-light);
 }
 
 .logo__image {

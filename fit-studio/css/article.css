@@ -11,7 +11,7 @@
 }
 
 .greet__description-link:hover {
-  color: var(--color-accent-alt);
+  color: var(--color-accent-light);
 }
 
 .group-training__description {
@@ -75,5 +75,5 @@
 }
 
 .video-player__play-button:hover {
-  background-color: var(--color-accent-alt);
+  background-color: var(--color-accent-light);
 }
