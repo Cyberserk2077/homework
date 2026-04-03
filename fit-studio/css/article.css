@@ -47,7 +47,7 @@
 }
 
 .video-player {
-  width: 1220px;
+  max-width: 1220px;
   height: 512px;
 }
 
@@ -76,4 +76,28 @@
 
 .video-player__play-button:hover {
   background-color: var(--color-accent-light);
+}
+
+@media (width <= 1023px) {
+
+  .greet__description {
+    margin-bottom: 50px;
+  }
+
+  .video-player {
+    height: auto;
+  }
+}
+
+@media (width <= 767px) {
+  
+  .video-player__play-button {
+    width: 45px;
+    aspect-ratio: 1;
+  }
+  
+  .video-player__play-button svg {
+    width: 15px;
+    aspect-ratio: 1;
+  }
 }

@@ -16,7 +16,7 @@
 .hero__inner {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   gap: 28px;
 }
 
@@ -61,7 +61,9 @@
 .news-card {
   display: flex;
   flex-direction: column;
+  flex: 1 1 284px;
   row-gap: 12px;
+  min-width: 0;
   max-width: 284px;
   border: var(--border);
   background-color: var(--color-white);
@@ -185,5 +187,102 @@
   line-height: 1.30;
 }
 
+@media (width <= 1280px) {
 
+  .hero__image-female,
+  .hero__image-male {
+    width: 50%;
+  }
+}
 
+@media (width <= 1200px) {
+
+  .last-news__title {
+    text-align: center;
+  }
+
+  .last-news__cards {
+    flex-wrap: wrap;
+  }
+
+  .news-card {
+    flex-basis: 50%;
+    min-width: 375px;
+  }
+
+  .news-card__image {
+    width: 100%;
+  }
+
+  .faq__accordion-title {
+    font-size: 22px;
+  }
+}
+
+@media (width <= 1023px) {
+
+  .hero::after {
+    display: none;
+  }
+
+  .hero__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__description {
+    align-self: center;
+    margin-bottom: 45px;
+  }
+
+  .news-card {
+    min-width: 100%;
+  }
+  
+  .faq::before {
+    display: none;
+  }
+  
+  .faq__title {
+    text-align: center;
+  }
+  
+  .faq__body {
+    flex-direction: column-reverse;
+  }
+  
+  .faq__image {
+    width: 100%;
+  }
+}
+
+@media (width <= 767px) {
+
+  .hero__title {
+    margin-bottom: 25px;
+  }
+
+  .faq__accordion-title {
+    font-size: 20px;
+  }
+}
+
+@media (width <= 480px) {
+
+  .hero__choose-coach {
+    max-width: 125px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .faq__accordion-title {
+    font-size: 18px;
+  }
+}
