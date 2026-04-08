@@ -1,0 +1,10 @@
+@import './normalize.css';
+@import './fonts.css';
+@import './variables.css';
+@import './utils.css';
+@import './globals.css';
+
+@import './blocks/burger-button.css';
+@import './blocks/logo.css';
+@import './blocks/menu.css';
+@import './blocks/header.css';
