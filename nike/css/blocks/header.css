@@ -3,6 +3,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: var(--layer-1);
   padding-block: 32px;
   background-color: var(--color-dark);
   transition-duration: var(--transition-duration);
@@ -137,7 +138,6 @@
     transition-duration: var(--transition-duration);
     opacity: 0;
     visibility: hidden;
-    /* display: none; */
   }
 
   .header__menu--open {

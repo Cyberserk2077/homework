@@ -3,6 +3,7 @@
   --color-dark: #2A2A29;
   --color-dark-alt: #181817;
   --color-accent: #FFEA00;
+  --color-gold: #C9C69B;
   --color-purple: #9747FF;
   --color-disabled: #5D5D56;
 
@@ -23,6 +24,7 @@
 
   --transition-duration: 0.2s;
 
+  --layer-negative: -1;
   --layer-1: 1;
   --layer-2: 2;
   --layer-3: 3;

@@ -9,6 +9,14 @@
   background-color: transparent;
 }
 
+.burger-button__burger-menu {
+  stroke: var(--color-accent);
+}
+
+.burger-button__burger-cross {
+  stroke: var(--color-gold);
+}
+
 .burger-button__burger-cross,
 .burger-button--open .burger-button__burger-menu {
   display: none;
