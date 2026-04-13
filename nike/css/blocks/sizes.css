@@ -1,0 +1,16 @@
+.sizes__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(width > 767px) {
+  .sizes__inner {
+    row-gap: 40px;
+  }
+}
+
+@media(width <= 767px) {
+  .sizes__inner {
+    row-gap: 30px;
+  }
+}

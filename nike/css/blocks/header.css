@@ -11,6 +11,7 @@
 
 .header--fixed {
 	box-shadow: var(--header-shadow);
+	overflow-y: hidden;
 }
 
 .header__inner {

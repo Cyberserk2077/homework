@@ -6,11 +6,16 @@
 		<title>Nike Air Mag</title>
 		<link rel="stylesheet" href="./css/main.css" />
 		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+		/>
+		<link
 			rel="shortcut icon"
 			type="image/x-icon"
 			href="./icons/nike-favicon.ico"
 		/>
-		<script src="./scripts/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/main.js" type="module"></script>
 	</head>
 	<body class="page__body">
 		<header class="header">
@@ -122,7 +127,7 @@
 					</footer>
 				</div>
 			</section>
-			<section class="air-mag" id="air-mag">
+			<section id="air-mag" class="air-mag" >
 				<div class="air-mag__inner container">
 					<header class="air-mag__header">
 						<h2 class="air-mag__title">Air Mag</h2>
@@ -173,6 +178,244 @@
 								</p>
 							</li>
 						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="sizes" class="sizes section">
+				<div class="sizes__inner container">
+					<h2 class="sizes__title">Размеры</h2>
+					<div class="product">
+						<div class="product__slider-wrapper">
+								<button
+									class="product__slider-button product__slider-button--prev"
+									type="button"
+									aria-label="Предыдущий слайд"
+								>
+									<svg width="40" height="40">
+										<use
+											class="product__slider-icon"
+											href="./icons/main-sprite.svg#double-arrow-large"
+										>
+										</use>
+									</svg>
+								</button>
+								<div class="swiper product__slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="product__slide-inner">
+												<picture>
+													<source srcset="images/product-slides/1.webp">
+													<img
+														class="product__slide-image"
+														src="images/product-slides/1.png"
+														alt="Белые кроссовки Nike Air Mag вид спереди"
+														width="357" height="375"
+													/>
+												</picture>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product__slide-inner">
+												<picture>
+													<source srcset="images/product-slides/2.webp">
+													<img
+														class="product__slide-image"
+														src="images/product-slides/2.png"
+														alt="Белые кроссовки Nike Air Mag вид сзади"
+														width="408" height="375"
+													/>
+												</picture>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product__slide-inner">
+												<picture>
+													<source srcset="images/product-slides/3.webp">
+													<img
+														class="product__slide-image"
+														src="images/product-slides/3.png"
+														alt="Белые кроссовки Nike Air Mag вид сбоку"
+														width="442" height="375"
+													/>
+												</picture>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button
+									class="product__slider-button product__slider-button--next"
+									type="button"
+									aria-label="Следующий слайд"
+								>
+									<svg width="40" height="40">
+										<use
+											class="product__slider-icon"
+											href="./icons/main-sprite.svg#double-arrow-large"
+										>
+										</use>
+									</svg>
+								</button>
+							</div>
+						<div class="product__sizes">
+							<div class="product__info">
+								<h3 class="product__title">
+									Кроссовки <strong class="product__title-accent">Nike Air Mag</strong> Back To Future
+								</h3>
+								<p class="product__description">
+									Nike Air Mag — это кусочек киноистории и технологического прогресса. Если вы ищете уникальную пару кроссовок, которая станет не только стильным аксессуаром, но и ценным дополнением вашей коллекции, Nike Air Mag — идеальный выбор.
+								</p>
+							</div>
+							<p class="product__price h3">36 490&nbsp;₽</p>
+							<div class="product__size-range">
+									<div class="product__size">
+										<h4 class="product__size-title product__size-title--available h5">
+											Размеры в наличии
+										</h4>
+										<ul class="product__size-list" data-js-size-list>
+											<li class="product__size-item">
+												<button 
+													class="product__size-button" 
+													type="button" 
+													aria-label="Выбрать размер" 
+													title="Выбрать размер"
+													data-js-size-button
+												>
+													38
+												</button>
+											</li>
+											<li class="product__size-item">
+												<button 
+													class="product__size-button" 
+													type="button" 
+													aria-label="Выбрать размер" 
+													title="Выбрать размер"
+													data-js-size-button
+												>
+													40
+												</button>
+											</li>
+											<li class="product__size-item">
+												<button 
+													class="product__size-button product__size-button--active"
+													type="button" 
+													aria-label="Выбрать размер"
+													title="Выбрать размер"
+													data-js-size-button
+												>
+													41
+												</button>
+											</li>
+											<li class="product__size-item">
+												<button 
+													class="product__size-button" 
+													type="button" 
+													aria-label="Выбрать размер"
+													title="Выбрать размер"
+													data-js-size-button
+												>
+													42
+												</button>
+											</li>
+											<li class="product__size-item">
+												<button 
+													class="product__size-button" 
+													type="button" 
+													aria-label="Выбрать размер"
+													title="Выбрать размер"
+													data-js-size-button
+												>
+													44
+												</button>
+											</li>
+											<li class="product__size-item">
+												<button 
+													class="product__size-button" 
+													type="button" 
+													aria-label="Выбрать размер"
+													title="Выбрать размер"
+													data-js-size-button
+												>
+													45
+												</button>
+											</li>
+										</ul>
+										<div class="product__purchase">
+											<button 
+												class="product__purchase-button" 
+												type="button"
+											>
+												Купить в 1 клик
+											</button>
+											<button 
+												class="product__cart-button" 
+												type="button"
+												aria-label="Добавить в корзину"
+												title="Добавить в корзину"
+											>
+												<img 
+												  class="product__cart-image" 
+												  src="./icons/cart-icon.svg" 
+												  alt="Корзина" 
+												  width="23" height="23" loading="lazy"
+												/>
+											</button>
+										</div>
+									</div>
+									<div class="product__size">
+										<h4 class="product__size-title product__size-title--unavailable h5">
+											Размеры под заказ
+										</h4>
+										<ul class="product__size-list">
+											<li class="product__size-item">
+												<button
+													class="product__size-button"
+													type="button"
+													disabled
+												>
+													36
+												</button>
+											</li>
+											<li class="product__size-item">
+												<button
+													class="product__size-button"
+													type="button"
+													disabled
+												>
+													37
+												</button>
+											</li>
+											<li class="product__size-item">
+												<button
+													class="product__size-button"
+													type="button"
+													disabled
+												>
+													43
+												</button>
+											</li>
+											<li class="product__size-item">
+												<button
+													class="product__size-button"
+													type="button"
+													disabled
+												>
+													46
+												</button>
+											</li>
+											<li class="product__size-item">
+												<button
+													class="product__size-button"
+													type="button"
+													disabled
+												>
+													47
+												</button>
+											</li>
+										</ul>
+										<a class="product__size-order-link" href="/">Заказать размер</a>
+									</div>
+								</div>
+						</div>
 					</div>
 				</div>
 			</section>

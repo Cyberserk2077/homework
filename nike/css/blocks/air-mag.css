@@ -82,13 +82,13 @@
 
 @media (width > 767px) {
 	.air-mag {
-		padding-bottom: 93px;
+		padding-bottom: 23px;
 	}
 }
 
 @media (width <= 767px) {
 	.air-mag {
-		padding-bottom: 80px;
+		padding-bottom: 40px;
 	}
 
 	.air-mag__inner {
