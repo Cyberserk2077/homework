@@ -1,40 +1,41 @@
 :root {
-  --color-light: #FFFFFF;
-  --color-light-glow: #FFFFFF4D;
-  --color-dark: #2A2A29;
-  --color-dark-alt: #181817;
-  --color-accent: #FFEA00;
-  --color-accent-glow: #FFEA004D;
-  --color-gold: #C9C69B;
-  --color-purple: #9747FF;
-  --color-disabled: #5D5D56;
-  --color-disabled-glow: #5D5D564D;
+	--color-light: #ffffff;
+	--color-light-glow: #ffffff4d;
+	--color-dark: #2a2a29;
+	--color-dark-alt: #181817;
+	--color-accent: #ffea00;
+	--color-accent-glow: #ffea004d;
+	--color-gold: #c9c69b;
+	--color-purple: #9747ff;
+	--color-disabled: #5d5d56;
+	--color-disabled-glow: #5d5d564d;
+  --color-overlay: #2a2a2980;
 
-  --font-family-base: 'Montserrat', sans-serif;
+	--font-family-base: 'Montserrat', sans-serif;
 
-  --container-width: 1240px;
-  --container-padding-x: 16px;
+	--container-width: 1240px;
+	--container-padding-x: 16px;
 
-  --border-radius-l: 12px;
-  --border-radius-m: 5px;
-  --border-radius-s: 4px;
+	--border-radius-l: 12px;
+	--border-radius-m: 5px;
+	--border-radius-s: 4px;
 
-  --border: 1px solid var(--color-light);
-  --border-accent: 1px solid var(--color-accent);
-  --border-disabled: 1px solid var(--color-disabled);
+	--border: 1px solid var(--color-light);
+	--border-accent: 1px solid var(--color-accent);
+	--border-disabled: 1px solid var(--color-disabled);
 
-  --header-shadow: 0 0 20px 0 var(--color-dark-alt);
-  --menu-shadow: -2px 0 20px 0 var(--color-dark-alt);
-  --shadow-light: 0 0 5px 2px var(--color-light-glow);
-  --shadow-accent-l: 0 0 30px 5px var(--color-accent-glow);
-  --shadow-accent-s: 0 0 5px 2px var(--color-accent-glow);
-  --shadow-disabled: 0 0 5px 2px var(--color-disabled-glow);
+	--header-shadow: 0 0 20px 0 var(--color-dark-alt);
+	--menu-shadow: -2px 0 20px 0 var(--color-dark-alt);
+	--shadow-light: 0 0 5px 2px var(--color-light-glow);
+	--shadow-accent-l: 0 0 30px 5px var(--color-accent-glow);
+	--shadow-accent-s: 0 0 5px 2px var(--color-accent-glow);
+	--shadow-disabled: 0 0 5px 2px var(--color-disabled-glow);
 
-  --transition-duration: 0.2s;
+	--transition-duration: 0.2s;
 
-  --layer-negative: -1;
-  --layer-0: 0;
-  --layer-1: 1;
-  --layer-2: 2;
-  --layer-3: 3;
+	--layer-negative: -1;
+	--layer-0: 0;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
 }
