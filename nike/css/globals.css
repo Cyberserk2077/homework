@@ -1,5 +1,6 @@
 .page {
 	scroll-padding-top: 100px;
+	scrollbar-gutter: stable;
 }
 
 .page__body {

@@ -27,7 +27,7 @@
 	box-shadow:
 		var(--shadow-light),
 		inset var(--shadow-light);
-	background-color: var(--color-overlay);
+	background-color: #2a2a2980;
 }
 
 @media (any-hover: hover) {

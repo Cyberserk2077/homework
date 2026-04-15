@@ -9,7 +9,7 @@
 	--color-purple: #9747ff;
 	--color-disabled: #5d5d56;
 	--color-disabled-glow: #5d5d564d;
-  --color-overlay: #2a2a2980;
+  --overlay: linear-gradient(rgba(30,30,30,.9),#000 1810%);
 
 	--font-family-base: 'Montserrat', sans-serif;
 

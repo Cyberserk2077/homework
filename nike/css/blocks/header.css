@@ -124,8 +124,8 @@
 		bottom: 0;
 		z-index: var(--layer-2);
 		min-width: 297px;
-		padding-top: 144px;
-		padding-right: 15px;
+		padding: 144px 15px 20px 0;
+		overflow-y: auto;
 		background-color: var(--color-dark);
 		box-shadow: var(--menu-shadow);
 		transition-duration: var(--transition-duration);

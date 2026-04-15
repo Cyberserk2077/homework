@@ -1,5 +1,6 @@
 import HeaderFixed from './header.js'
 import BurgerMenu from './burgerButton.js'
+import Modal from './modal.js'
 import { productSlider } from "./productSlider.js";
 import { sizes } from "./sizes.js";
 
@@ -27,7 +28,13 @@ try {
 		},
 		headerFixed
 	)
-
+	
+	new Modal({
+		PAGE_BODY: 'page__body', 
+		PAGE_BODY_NO_SCROLL: 'page__body--locked', 
+		}
+	)
+	
 	productSlider()
 	sizes()
 } catch (error) {

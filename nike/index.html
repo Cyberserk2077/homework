@@ -84,11 +84,11 @@
 							<svg width="24" height="24">
 								<use
 									class="burger-button__burger-menu"
-									href="./icons/sprite.svg#burger-menu"
+									href="./icons/sprite.svg#menu"
 								></use>
 								<use
 									class="burger-button__burger-cross"
-									href="./icons/sprite.svg#burger-cross"
+									href="./icons/sprite.svg#cross"
 								></use>
 							</svg>
 						</button>
@@ -352,7 +352,12 @@
 										</li>
 									</ul>
 									<div class="product__purchase">
-										<button class="product__purchase-button" type="button">
+										<button 
+											class="product__purchase-button" 
+											type="button"
+											data-js-modal-button="buy"
+											data-js-modal-speed="300"
+										>
 											Купить в 1 клик
 										</button>
 										<button
@@ -360,6 +365,8 @@
 											type="button"
 											aria-label="Добавить в корзину"
 											title="Добавить в корзину"
+											data-js-modal-button="cart"
+											data-js-modal-speed="500"
 										>
 											<img
 												class="product__cart-image"
@@ -944,5 +951,125 @@
 				</div>
 			</section>
 		</main>
+		<footer class="footer">
+			<div class="footer__inner container">
+				<a class="footer__logo logo" href="/">
+					<img
+						class="logo__image"
+						src="./images/logo.svg"
+						alt="Логотип Nike"
+						width="50"
+						height="20"
+						loading="lazy"
+					/>
+				</a>
+				<nav
+					class="footer__menu menu"
+				>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="#air-mag" lang="en">Air Mag</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#sizes">Размеры</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#characteristics">Характеристики</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#top-models">Други ТОП модели</a>
+						</li>
+					</ul>
+				</nav>
+				<a class="footer__contact-link" href="tel:+79292992929">
+					+7 (929) 299-29-29
+				</a>
+			</div>
+		</footer>
+		<div class="modal">
+			<div class="modal__window modal-buy" data-js-modal-window="buy">
+				<button
+					class="modal__close-button"
+					type="button"
+					aria-label="Закрыть"
+					title="Закрыть"
+					data-js-modal-close
+				>
+					<svg width="24" height="24">
+						<use class="modal__close-icon" href="./icons/sprite.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="modal__content modal-buy__content">
+					<h3 class="modal-buy__title">Заявка на заказ</h3>
+					<form class="modal-buy__form">
+						<label class="modal-buy__label">
+							<input
+								class="modal-buy__input"
+								type="text"
+								name="name"
+								placeholder="Ваше имя"
+								required
+							/>
+						</label>
+						<label class="modal-buy__label">
+							<input
+								class="modal-buy__input"
+								type="tel"
+								name="phone"
+								placeholder="Номер телефона"
+								required
+							/>
+						</label>
+						<label class="modal-buy__label">
+							<input
+								class="modal-buy__input"
+								type="email"
+								name="email"
+								placeholder="E-mail"
+								required
+							/>
+						</label>
+						<button class="modal-buy__submit" type="button">Отправить</button>
+					</form>
+				</div>
+			</div>
+			<div class="modal__window modal-buy" data-js-modal-window="cart">
+				<button
+					class="modal__close-button"
+					type="button"
+					aria-label="Закрыть"
+					title="Закрыть"
+					data-js-modal-close
+				>
+					<svg width="24" height="24">
+						<use class="modal__close-icon" href="./icons/sprite.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="modal__content modal-buy__content">
+					<h3 class="modal-buy__title">Заявка на заказ</h3>
+					<form class="modal-buy__form">
+						<label class="modal-buy__label">
+							<input
+								class="modal-buy__input"
+								type="text"
+								name="name"
+								placeholder="Ваше имя"
+								required
+							/>
+						</label>
+						<label class="modal-buy__label">
+							<input
+								class="modal-buy__input"
+								type="tel"
+								name="phone"
+								placeholder="Номер телефона"
+								required
+							/>
+						</label>
+						<button class="modal-buy__submit" type="button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

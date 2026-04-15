@@ -13,7 +13,7 @@
     />
   </symbol>
 
-  <symbol id="burger-menu" viewBox="0 0 24 24" fill="none">
+  <symbol id="menu" viewBox="0 0 24 24" fill="none">
     <path d="M21 12H9M21 18H7M21 6H3" 
     stroke-width="2" 
     stroke-linecap="round" 
@@ -21,7 +21,7 @@
     />
   </symbol>
 
-  <symbol id="burger-cross" viewBox="0 0 24 24" fill="none">
+  <symbol id="cross" viewBox="0 0 24 24" fill="none">
     <path d="M18 6L6 18M6 6L18 18" 
     stroke-width="2" 
     stroke-linecap="round" 
